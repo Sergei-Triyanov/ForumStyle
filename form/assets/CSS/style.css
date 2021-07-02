@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background: #0d2c54;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+}
+
+body section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+body section form .container {
+  position: relative;
+  padding: 50px;
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  z-index: 1000;
+}
+
+body section form .container h1 {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  color: #00a4e6;
+  font-weight: 700;
+}
+
+body section form .container .row100 {
+  position: relative;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+body section form .container .row100 .col {
+  position: relative;
+  margin: 30px 0 20px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+body section form .container .row100 .col .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+body section form .container .row100 .col .inputBox input, body section form .container .row100 .col .inputBox textarea {
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #202020;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+  z-index: 1;
+}
+
+body section form .container .row100 .col .inputBox .text {
+  display: block;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+body section form .container .row100 .col .inputBox input:focus + .text, body section form .container .row100 .col .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+body section form .container .row100 .col .inputBox .line {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+body section form .container .row100 .col .inputBox input:focus ~ .line, body section form .container .row100 .col .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+body section form .container .row100 .col .inputBox textarea:focus ~ .line, body section form .container .row100 .col .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+body section form .container .row100 .col .textarea {
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+body section form .container .row100 .col .textarea textarea {
+  resize: none;
+}
+
+body section form .container .row100 .col .textarea textarea:focus ~ .text, body section form .container .row100 .col .textarea textarea:valid ~ .text {
+  top: -35px;
+  left: -6px;
+}
+
+body section form .container .row100 .col input[type="submit"] {
+  padding: 8px 80px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 4px;
+  border: none;
+  background: #ff9f1a;
+  color: #0d2c54;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+body section form .container .row100 .col input[type="submit"]:hover {
+  background: #87bace;
+  color: #fff;
+}
+
+body section form .container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-transform: skewX(-13deg);
+          transform: skewX(-13deg);
+}
+
+body section::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: linear-gradient(130deg, #ff9f1a 30%, #e63746);
+  -webkit-transform: translate(-420px, -180px);
+          transform: translate(-420px, -180px);
+}
+
+body section::after {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: linear-gradient(130deg, #87bace 60%, #00a4e6);
+  -webkit-transform: translate(320px, 190px);
+          transform: translate(320px, 190px);
+}
+
+@media (max-width: 768px) {
+  body section::before {
+    -webkit-transform: translate(-240px, -230px);
+            transform: translate(-240px, -230px);
+  }
+  body section::after {
+    -webkit-transform: translate(220px, 290px);
+            transform: translate(220px, 290px);
+  }
+  body section form .container {
+    padding: 20px;
+  }
+  body section form .container h1 {
+    font-size: 28px;
+  }
+  body section form .container .row100 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
